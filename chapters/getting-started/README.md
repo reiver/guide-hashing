@@ -44,4 +44,4 @@ Let's continue to the next chapter …
 
 ---
 
-[⏮](../../README.md) [⏭️](../usages/README.md)
+[⏮](../../README.md) [⏭️](../example-usages/README.md)
