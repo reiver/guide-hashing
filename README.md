@@ -1,4 +1,5 @@
 # GUIDE: Hashing
+
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
@@ -9,4 +10,4 @@ This **guide** will help you understand what they are, the different ways they a
 
 ## Table of Contents
 0. [Getting Started](chapters/getting-started/README.md)
-1. Some Usages of Hashing
+1. [Example Usages](chapters/example-usages/README.md)
