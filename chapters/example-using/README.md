@@ -14,8 +14,16 @@ The [Go programming language](http://golang.org/) has some built-in packages for
 
 These implement some well-known and popular hashing algorithms.
 
-We are going to use some of these.
-(But later, in a following chapter, we will implement some **hash functions** ourselves from scratch.)
+We are going to cover each of these Go packages — but later, in a following chapter, we will implement some **hash functions** ourselves from scratch.
+
+But for now, let's learn how to use the **hash functions** that are built into the [Go programming language](http://golang.org/) —
+
+## Sections
+1. MD5
+2. SHA-1
+3. SHA-256
+4. SHA-512
+
 
 ---
 
