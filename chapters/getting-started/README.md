@@ -31,3 +31,17 @@ A particular chapter can depend on the knowledge gained in previous chapter. You
 ## Coaching
 
 The point of you going through this **guide** is that, after you complete each assignment, then **you show your work to someone more experienced with the _hashing_, so that they can give you feedback, tips, etc, so you can learn _hashing_ faster**.
+
+## Files and Directories
+
+As you read through this **guide**, you will be writing code.
+
+In general you are creating a separate project for each section.
+
+## Continue
+
+Let's continue to the next chapter …
+
+---
+
+[⏮](../../README.md) [⏭️](../usages/README.md)
