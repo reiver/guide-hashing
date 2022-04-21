@@ -20,7 +20,7 @@ Do NOT skip any sections!!
 
 Even if they seem easy to you — still, do _all_ the sections!
 
-The point of this **guide** is _not_ to challenge you; the point of this guide is to help you become familiar with **hashing**, and to correct any mistakes or misunderstandings you might have early on.
+The point of this **guide** is _not_ to challenge you; the point of this **guide** is to help you become familiar with **hashing**, and to correct any mistakes or misunderstandings you might have early on.
 
 ## Do It In Order
 
