@@ -1,4 +1,7 @@
 # GUIDE: Hashing
+by [Charles Iliya Krempeaux](http://changelog.ca/)
+
+---
 
 This is a **guide** on hashing, and hash functions.
 
