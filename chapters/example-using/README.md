@@ -19,11 +19,10 @@ We are going to cover each of these Go packages — but later, in a following ch
 But for now, let's learn how to use the **hash functions** that are built into the [Go programming language](http://golang.org/) —
 
 ## Sections
-1. MD5
-2. SHA-1
-3. SHA-256
-4. SHA-512
-
+1. [MD5](sections/md5/README.md)
+2. [SHA-1](sections/sha-1/README.md)
+3. [SHA-256](sections/sha-256/README.md)
+4. [SHA-512](sections/sha-512/README.md)
 
 ---
 
