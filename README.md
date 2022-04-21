@@ -18,3 +18,5 @@ This **guide**:
 0. [Getting Started](chapters/getting-started/README.md)
 1. [Example Usages](chapters/example-usages/README.md)
 2. [Example Using](chapters/example-using/README.md)
+4. [Digest Fingerprinting](chapters/digest-fingerprinting/README.md)
+5. 
