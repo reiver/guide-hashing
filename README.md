@@ -18,5 +18,9 @@ This **guide**:
 0. [Getting Started](chapters/getting-started/README.md)
 1. [Example Usages](chapters/example-usages/README.md)
 2. [Example Using](chapters/example-using/README.md)
-4. [Digest Fingerprinting](chapters/digest-fingerprinting/README.md)
-5. 
+3. [MD5](chapters/md5/README.md)
+4. [SHA-1](chapters/sha-1/README.md)
+5. [SHA-256](chapters/sha-256/README.md)
+6. [SHA-512](chapters/sha-512/README.md)
+7. [Digest Fingerprinting](chapters/digest-fingerprinting/README.md)
+8. 
