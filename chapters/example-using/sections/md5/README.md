@@ -136,12 +136,24 @@ for // ...
 	n, err = hasher.Write(buffer[:])
 ```
 
-
 Hints:
 * [import "base32"](https://pkg.go.dev/encoding/base32)
 * [import "base64"](https://pkg.go.dev/encoding/base64)
 * [import "fmt"](https://pkg.go.dev/fmt)
 * [import "os"](https://pkg.go.dev/os)
+
+## Assignment №3
+
+A **URN** (short for **Uniform Resource Name**) is a URL-like technology that is meant to be used to create globally unique identifiers.
+
+Here are some example **URN**s:
+
+* `urn:ietf:rfc:2648` — The IETF's RFC 2648
+* `urn:isbn:0897899245` — The ISBN identifying the hardcover book by El-Sayed El-Aswad titled “Religion and Folk Cosmology: Scenarios of the Visible and Invisible in Rural Egypt” 
+* `urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6` — a UUID as a URN.
+* `urn:xmlorg:objects:dtd:xml:docbook:v4.1.2`
+* `urn:xmpp:delay` — Used as an XML-namespace for XMPP's delayed-delivery technology.
+
 
 
 
