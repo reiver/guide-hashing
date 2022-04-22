@@ -182,19 +182,21 @@ I.e.,:
 urn:md5:{hexadecimal-of-md5-digest}
 ```
 
-Your assignment is to write a program that outputs the **MD5** **URN** of data.
+⚠️ Although note that with digests from other cryptographic hash functions, they may use other serializations besides hexadecimal. For example — **SHA-1** **URN**s use **base32** for serialization (rather than **hexadecimal**).
 
+6trdc
 ## Assignment №4
 
 **Magnet URI**s have been used as a way of making some **URN**s easier to work with.
+
+(For example, JavaScript on a web-page would look for **magnet URI**s, and do some magic with a known TCP port range, to make native applications available to the user using the web browser.)
 
 The **MD5** **URN** was one of the **URN** types that were used with **magnet URI**s. For example:
 ```
 magnet:?xt=urn:md5:86fb269d190d2c85f6e0468ceca42a20
 ```
 
-
-
+Your assignment is to write a program that outputs a **magnet URI** with a `xt` set to the **MD5** **URN** for data.
 
 ---
 
