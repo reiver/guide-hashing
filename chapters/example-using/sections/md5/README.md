@@ -231,6 +231,9 @@ Content-Type: text/plain
 
 Hello world!
 ```
+
+⚠️ Although note that the HTTP `Content-MD5` header has largely been replaced by the newer HTTP `Digest`, `Want-Digest`, `Content-Digest`, `Want-Content-Digest`, `Repr-Digest`, and `Want-Repr-Digest` headers. But regardless, in this section we will focus on the `Content-MD5` header.
+
 Your assignment is to write (so called) "middleware" that will add the appropriate `Content-MD5` header to an HTTP response.
 
 ---
