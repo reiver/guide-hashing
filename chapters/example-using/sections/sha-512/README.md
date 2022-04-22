@@ -7,4 +7,4 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-[⏮](../sha-256/README.md) [⏭️](../../../digest-fingerprinting/README.md)
+[⏮](../sha-256/README.md) [⬆️](../../README.md) [⏭️](../../../digest-fingerprinting/README.md)
