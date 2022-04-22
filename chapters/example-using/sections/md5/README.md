@@ -39,7 +39,7 @@ func main() {
 	// Apply the MD5 cryptographic hash function to the data.
 	digest := md5.Sum(p)
 	
-	// Output the digest that was returned from the cryptographic hash function, in hexadecimal.
+	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
 	fmt.Printf("digest (in hexadecimal): %x", digest)
 }
 
@@ -86,10 +86,23 @@ package main
 import (
 	"crypto/md5"
 	"fmt"
+	"io"
 )
 
 func main() {
 
+	hasher := md5.New()
+	
+	io.WriteString(hasher, "Hello")
+	io.WriteString(hasher, " ")
+	io.WriteString(hasher, "world")
+	io.WriteString(hasher, "!")
+	
+	// Get the resulting digest from applying the cryptographic hash function to the data.
+	digest := hasher.Sum(nil)
+	
+	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
+	fmt.Printf("digest (in hexadecimal): %x", digest)
 }
 ```
 
