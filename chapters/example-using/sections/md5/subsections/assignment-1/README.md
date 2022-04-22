@@ -1,4 +1,4 @@
-# MD5 Assignment №1  ([Hashing Guide](../../../../../../README.md))
+# MD5 Assignment №1 ([Hashing Guide](../../../../../../README.md))
 
 by [Charles Iliya Krempeaux](http://changelog.ca/)
 
