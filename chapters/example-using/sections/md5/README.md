@@ -38,9 +38,12 @@ func main() {
 	
 	// Apply the MD5 cryptographic hash function to the data, and get the resulting digest from applying the cryptographic hash function to the data.
 	digest := md5.Sum(p)
-	
+
+	// Output the digest that was returned from the cryptographic hash function, as a sequence of bytes in decimal format.
+	fmt.Printf("digest (sequece of bytes in decimal)", digest)
+
 	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
-	fmt.Printf("digest (in hexadecimal): %x", digest)
+	fmt.Printf("digest (in hexadecimal): %x \n", digest)
 }
 
 ```
@@ -104,6 +107,9 @@ func main() {
 	// Get the resulting digest from applying the cryptographic hash function to the data.
 	digest := hasher.Sum(nil)
 	
+	// Output the digest that was returned from the cryptographic hash function, as a sequence of bytes in decimal format.
+	fmt.Printf("digest (sequece of bytes in decimal)", digest)
+	
 	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
 	fmt.Printf("digest (in hexadecimal): %x", digest)
 }
@@ -115,11 +121,12 @@ Write a program in the [Go programming language](http://golang.org/) using the [
 
 * accepts the data (it will run through the cryptographic hash function) by opening a file specified by `os.Arg[1]`,
 * reads in data from the file **256 bytes** at a time, and
-* output the resulting **digest** in 4 different formats:
-  * hexadecimal,
-  * base32,
-  * base64, and
-  * base64url.
+* output the resulting **digest** in 5 different formats:
+  * sequence of bytes in decimal format,
+  * hexadecimal format,
+  * base32 format,
+  * base64 format, and
+  * base64url format.
 
 So, reading in the data **256 bytes** at a time could be done by reading it into a buffer such as:
 ```golang
