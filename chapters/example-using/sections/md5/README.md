@@ -25,47 +25,6 @@ Nevertheless, understanding & using the **MD5** **cryptographic hash function** 
 10. [Assignment №8](subsections/assignment-8/README.md)
 11. [Assignment №9](subsections/assignment-9/README.md)
 
-## Big Data
-
-In our previous example, the data we applied the **cryptographic hash function** to was relatively small.
-
-But what if the data we want to apply the **cryptographic hash function** to is relatively big‽
-
-What if, in a practical sense, we cannot (or _should not_) put all the data into a `string` or `[]byte`; what do we do then‽
-
-That is where ["crypto/md5"](https://pkg.go.dev/crypto/md5)'s [md5.New()](https://pkg.go.dev/crypto/md5#New) comes into play —
-
-```golang
-package main
-
-import (
-	"crypto/md5"
-	"fmt"
-	"io"
-)
-
-func main() {
-
-	hasher := md5.New()
-	
-	// This shows that the data that is being run through a cryptographic hash function
-	// can be given to the cryptographic hash function in chunks.
-	io.WriteString(hasher, "Hello")
-	io.WriteString(hasher, " ")
-	hasher.Write([]byte{'w','o','r','l','d'})
-	hasher.Write([]byte{'!'})
-	
-	// Get the resulting digest from applying the cryptographic hash function to the data.
-	digest := hasher.Sum(nil)
-	
-	// Output the digest that was returned from the cryptographic hash function, as a sequence of bytes in decimal format.
-	fmt.Printf("digest (sequece of bytes in decimal)", digest)
-	
-	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
-	fmt.Printf("digest (in hexadecimal): %x", digest)
-}
-```
-
 ## Assignment №2
 
 Write a program in the [Go programming language](http://golang.org/) using the ["crypto/md5"](https://pkg.go.dev/crypto/md5)'s [md5.New()](https://pkg.go.dev/crypto/md5#New) function that —
