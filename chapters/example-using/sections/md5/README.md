@@ -12,6 +12,20 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 Nevertheless, understanding & using the **MD5** **cryptographic hash function** will help us understand **hashing** in general, so let's play around with it.
 
+## Subsections
+1. [import "crypto/md5"](subsections/golang-md5/README.md)
+2. [Assignment №1](subsections/assignment-1/README.md)
+3. [Big Data](subsections/big-data/README.md)
+4. [Assignment №2](subsections/assignment-2/README.md)
+5. [Assignment №3](subsections/assignment-3/README.md)
+6. [Assignment №4](subsections/assignment-4/README.md)
+7. [Assignment №5](subsections/assignment-5/README.md)
+8. [Assignment №6](subsections/assignment-6/README.md)
+9. [Assignment №7](subsections/assignment-7/README.md)
+10. [Assignment №8](subsections/assignment-8/README.md)
+11. [Assignment №9](subsections/assignment-9/README.md)
+
+
 ## import "crypto/md5"
 
 The [Go programming language](http://golang.org/) has a built-in support for **MD5**, with its ["crypto/md5"](https://pkg.go.dev/crypto/md5) package.
