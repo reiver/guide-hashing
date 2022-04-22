@@ -33,7 +33,7 @@ func main() {
 	fmt.Printf("digest (sequece of bytes in decimal)", digest)
 
 	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
-	fmt.Printf("digest (in hexadecimal): %x \n", digest)
+	fmt.Printf("digest (hexadecimal): %x \n", digest)
 }
 
 ```
