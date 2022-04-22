@@ -10,7 +10,7 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ⚠️ But the **MD5** cryptographic hash function is considered **‘broken’** and should **NOT** be used for new systems.
 
-Nevertheless, understanding & using the **MD5** cryptographic hash function will help us understand **hashing** in general, so let's play around with it.
+Nevertheless, understanding & using the **MD5** **cryptographic hash function** will help us understand **hashing** in general, so let's play around with it.
 
 ## import "crypto/md5"
 
