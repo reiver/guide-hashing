@@ -184,7 +184,6 @@ urn:md5:{hexadecimal-of-md5-digest}
 
 ⚠️ Although note that with digests from other cryptographic hash functions, they may use other serializations besides hexadecimal. For example — **SHA-1** **URN**s use **base32** for serialization (rather than **hexadecimal**).
 
-6trdc
 ## Assignment №4
 
 **Magnet URI**s have been used as a way of making some **URN**s easier to work with.
@@ -197,6 +196,42 @@ magnet:?xt=urn:md5:86fb269d190d2c85f6e0468ceca42a20
 ```
 
 Your assignment is to write a program that outputs a **magnet URI** with a `xt` set to the **MD5** **URN** for data.
+
+## Assignment №5
+
+The **HTTP** protocol once had a `Content-MD5` header that was intended to be used for **message integrity**.
+
+I.e., basically that the content the HTTP client receives is what the HTTP server actually sent.
+
+And this the content hasn't been changed due to network error, computer error, tampering, etc.
+
+The HTTP **Content-MD5** header looks like this:
+```
+Content-MD5: hvsmnRkNLIX24EaM7KQqIA==
+```
+
+Although it the HTTP `Content-MD5` header would be part of an HTTP response or HTTP request that would have other headers.
+
+For example:
+```
+HTTP/1.1 200 OK
+Content-Length: 12
+Content-MD5: hvsmnRkNLIX24EaM7KQqIA==
+Content-Type: text/plain
+
+Hello world!
+```
+
+Or:
+```
+PUT /apple/banana/cherry.txt
+Content-Length: 12
+Content-MD5: hvsmnRkNLIX24EaM7KQqIA==
+Content-Type: text/plain
+
+Hello world!
+```
+Your assignment is to write (so called) "middleware" that will add the appropriate `Content-MD5` header to an HTTP response.
 
 ---
 
