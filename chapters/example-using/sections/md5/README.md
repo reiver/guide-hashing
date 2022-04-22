@@ -129,11 +129,11 @@ var buffer [256]byte
 
 for // ...
 
-	n, err := file.Read(buffer[:])
+	n1, err := file.Read(buffer[:])
 
 	// ...
 	
-	n, err = hasher.Write(buffer[:])
+	n2, err := hasher.Write(buffer[:n1])
 ```
 
 Hints:
