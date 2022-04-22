@@ -36,7 +36,7 @@ func main() {
 	// so we need to convert our ‘string’ stored in ‘data’ into a ‘[]byte’.
 	var p []byte = []byte(data)
 	
-	// Apply the MD5 cryptographic hash function to the data.
+	// Apply the MD5 cryptographic hash function to the data, and get the resulting digest from applying the cryptographic hash function to the data.
 	digest := md5.Sum(p)
 	
 	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
@@ -93,10 +93,12 @@ func main() {
 
 	hasher := md5.New()
 	
+	// This shows that the data that is being run through a cryptographic hash function
+	// can be given to the cryptographic hash function in chunks.
 	io.WriteString(hasher, "Hello")
 	io.WriteString(hasher, " ")
-	io.WriteString(hasher, "world")
-	io.WriteString(hasher, "!")
+	hasher.Write([]byte{'w','o','r','l','d'})
+	hasher.Write([]byte{'!'})
 	
 	// Get the resulting digest from applying the cryptographic hash function to the data.
 	digest := hasher.Sum(nil)
