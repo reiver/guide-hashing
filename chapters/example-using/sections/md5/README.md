@@ -199,6 +199,14 @@ Your assignment is to write a program that outputs a **magnet URI** with a `xt` 
 
 ## Assignment №5
 
+**Named Information URI**
+
+## Assignment №6
+
+**Hash URI**
+
+## Assignment №7
+
 The **HTTP** protocol once had a `Content-MD5` header that was intended to be used for **message integrity**.
 
 I.e., basically that the content the HTTP client receives is what the HTTP server actually sent.
@@ -236,7 +244,7 @@ Hello world!
 
 Your assignment is to write (so called) "middleware" that will add the appropriate `Content-MD5` header to an HTTP response.
 
-## Assignment №6
+## Assignment №8
 
 Your assignment is to write program that —
 
@@ -247,6 +255,14 @@ Your assignment is to write program that —
   * else if the `Content-MD5` response header does exist compare its value with the what the program calculates to be the MD5 digest for the content and —
     * if they are equal, output a message saying so to `os.Stderr`,
     * but if they are NOT equal, ourput a message sayhing so to `os.Stdout`.
+
+## Assignment №9
+
+`Content-Digest`
+
+## Assignment №10
+
+`Repr-Digest`
 
 ---
 
