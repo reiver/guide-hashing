@@ -236,6 +236,18 @@ Hello world!
 
 Your assignment is to write (so called) "middleware" that will add the appropriate `Content-MD5` header to an HTTP response.
 
+## Assignment №6
+
+Your assignment is to write program that —
+
+* make an HTTP request to a URL given via `os.Args[1]`, 
+* outputs the content that was downloaded to `os.Stdout`,
+* look for an HTTP `Content-MD5` response header, and — 
+  * if the `Content-MD5` response header doesn't exist, then output to `os.Stderr` that it cannot verify the integrity of the download file,
+  * else if the `Content-MD5` response header does exist compare its value with the what the program calculates to be the MD5 digest for the content and —
+    * if they are equal, output a message saying so to `os.Stderr`,
+    * but if they are NOT equal, ourput a message sayhing so to `os.Stdout`.
+
 ---
 
 [⏮](../..//README.md) [⏭️](../sha-1/README.md)
