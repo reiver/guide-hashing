@@ -175,6 +175,7 @@ Then its **MD5** **URN** serialization would be:
 urn:md5:86fb269d190d2c85f6e0468ceca42a20
 ```
 
+Write a program that outputs the **MD5** **URN** of data.
 
 
 
