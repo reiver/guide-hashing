@@ -266,4 +266,4 @@ Your assignment is to write program that —
 
 ---
 
-[⏮](../..//README.md) [⏭️](../sha-1/README.md)
+[⏮](../..//README.md) [⬆️](../../README.md) [⏭️](../sha-1/README.md)
