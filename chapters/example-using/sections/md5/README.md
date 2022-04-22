@@ -25,69 +25,6 @@ Nevertheless, understanding & using the **MD5** **cryptographic hash function** 
 10. [Assignment №8](subsections/assignment-8/README.md)
 11. [Assignment №9](subsections/assignment-9/README.md)
 
-
-## import "crypto/md5"
-
-The [Go programming language](http://golang.org/) has a built-in support for **MD5**, with its ["crypto/md5"](https://pkg.go.dev/crypto/md5) package.
-
-Let's look at a very simple example of using the [Go programming language](http://golang.org/)'s implementation of **MD5** —
-
-```golang
-package main
-
-import (
-	"crypto/md5"
-	"fmt"
-)
-
-func main() {
-
-	// This is our raw data, that we will run through the cryptographic hash function.
-	// Feel free to change this, and see what the digest changes to.
-	const data string = "Hello world!"
-	
-	// The ‘md5.Sum()’ cryptographic hash function accepts a ‘[]byte’ as input, rather than a ‘ string’,
-	// so we need to convert our ‘string’ stored in ‘data’ into a ‘[]byte’.
-	var p []byte = []byte(data)
-	
-	// Apply the MD5 cryptographic hash function to the data, and get the resulting digest from applying the cryptographic hash function to the data.
-	digest := md5.Sum(p)
-
-	// Output the digest that was returned from the cryptographic hash function, as a sequence of bytes in decimal format.
-	fmt.Printf("digest (sequece of bytes in decimal)", digest)
-
-	// Output the digest that was returned from the cryptographic hash function, in hexadecimal format.
-	fmt.Printf("digest (in hexadecimal): %x \n", digest)
-}
-
-```
-
-The most important part of this code is:
-```golang
-digest := md5.Sum(p)
-```
-
-[md5.Sum()](https://pkg.go.dev/crypto/md5#Sum) is the [Go programming language](http://golang.org/)'s implementation of the MD5 hash function.
-
-It is the simplest way of applying the **MD5** cryptographic hash function, but not necessarily the _best_ way in some instances.
-
-## Assignment №1
-
-Write a program in the [Go programming language](http://golang.org/) using the ["crypto/md5"](https://pkg.go.dev/crypto/md5)'s [md5.Sum()](https://pkg.go.dev/crypto/md5#Sum) function that —
-
-* accepts the data (it will run through the cryptographic hash function) from `os.Stdin`, and
-* output the resulting **digest** in 4 different formats:
-  * hexadecimal,
-  * base32,
-  * base64, and
-  * base64url.
-
-Hints:
-* [import "base32"](https://pkg.go.dev/encoding/base32)
-* [import "base64"](https://pkg.go.dev/encoding/base64)
-* [import "fmt"](https://pkg.go.dev/fmt)
-
-
 ## Big Data
 
 In our previous example, the data we applied the **cryptographic hash function** to was relatively small.
