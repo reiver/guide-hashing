@@ -165,6 +165,8 @@ At one point, **MD5** **digests** were serialized in a **URN** format. For examp
 
 * `urn:md5:86fb269d190d2c85f6e0468ceca42a20`
 
+These **MD5** **URN**s were, for example, used with **magnet URI**s, which were used with some content-addressable systems.
+
 I.e., if the hexadecimal serialization of an **MD5** **digest** digest is:
 ```
 86fb269d190d2c85f6e0468ceca42a20
@@ -175,7 +177,22 @@ Then its **MD5** **URN** serialization would be:
 urn:md5:86fb269d190d2c85f6e0468ceca42a20
 ```
 
-Write a program that outputs the **MD5** **URN** of data.
+I.e.,:
+```
+urn:md5:{hexadecimal-of-md5-digest}
+```
+
+Your assignment is to write a program that outputs the **MD5** **URN** of data.
+
+## Assignment №4
+
+**Magnet URI**s have been used as a way of making some **URN**s easier to work with.
+
+The **MD5** **URN** was one of the **URN** types that were used with **magnet URI**s. For example:
+```
+magnet:?xt=urn:md5:86fb269d190d2c85f6e0468ceca42a20
+```
+
 
 
 
