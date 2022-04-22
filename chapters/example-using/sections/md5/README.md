@@ -154,6 +154,20 @@ Here are some example **URN**s:
 * `urn:xmlorg:objects:dtd:xml:docbook:v4.1.2`
 * `urn:xmpp:delay` — Used as an XML-namespace for XMPP's delayed-delivery technology.
 
+At one point, **MD5** **digests** were serialized in a **URN** format. For example:
+
+* `urn:md5:86fb269d190d2c85f6e0468ceca42a20`
+
+I.e., if the hexadecimal serialization of an **MD5** **digest** digest is:
+```
+86fb269d190d2c85f6e0468ceca42a20
+```
+
+Then its **MD5** **URN** serialization would be:
+```
+urn:md5:86fb269d190d2c85f6e0468ceca42a20
+```
+
 
 
 
