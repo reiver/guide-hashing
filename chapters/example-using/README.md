@@ -26,4 +26,4 @@ But for now, let's learn how to use the **hash functions** that are built into t
 
 ---
 
-[⏮](../example-usages/README.md) [⏭️](sections/md5/README.md)
+[⏮](../example-usages/README.md) [⬆️](../../README.md) [⏭️](sections/md5/README.md)
