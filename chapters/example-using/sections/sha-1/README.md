@@ -7,4 +7,4 @@ by [Charles Iliya Krempeaux](http://changelog.ca/)
 
 ---
 
-[⏮](../md5/README.md) [⏭️](../sha-256/README.md)
+[⏮](../md5/README.md) [⬆️](../../README.md) [⏭️](../sha-256/README.md)
