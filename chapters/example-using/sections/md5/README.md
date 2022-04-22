@@ -66,9 +66,10 @@ Write a program in the [Go programming language](http://golang.org/) using the [
   * base64url.
 
 Hints:
-* [import "fmt"](https://pkg.go.dev/fmt)
 * [import "base32"](https://pkg.go.dev/encoding/base32)
 * [import "base64"](https://pkg.go.dev/encoding/base64)
+* [import "fmt"](https://pkg.go.dev/fmt)
+
 
 ## Big Data
 
@@ -109,6 +110,40 @@ func main() {
 ```
 
 ## Assignment №2
+
+Write a program in the [Go programming language](http://golang.org/) using the ["crypto/md5"](https://pkg.go.dev/crypto/md5)'s [md5.New()](https://pkg.go.dev/crypto/md5#New) function that —
+
+* accepts the data (it will run through the cryptographic hash function) by opening a file specified by `os.Arg[1]`,
+* reads in data from the file **256 bytes** at a time, and
+* output the resulting **digest** in 4 different formats:
+  * hexadecimal,
+  * base32,
+  * base64, and
+  * base64url.
+
+So, reading in the data **256 bytes** at a time could be done by reading it into a buffer such as:
+```golang
+var buffer [256]byte
+
+// ...
+
+for // ...
+
+	n, err := file.Read(buffer[:])
+
+	// ...
+	
+	n, err = hasher.Write(buffer[:])
+```
+
+
+Hints:
+* [import "base32"](https://pkg.go.dev/encoding/base32)
+* [import "base64"](https://pkg.go.dev/encoding/base64)
+* [import "fmt"](https://pkg.go.dev/fmt)
+* [import "os"](https://pkg.go.dev/os)
+
+
 
 ---
 
